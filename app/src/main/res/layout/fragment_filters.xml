@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.diegolorden.imagesearch.app.FiltersFragment"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btnSaveFilters"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/etImageSite"
+        android:layout_toRightOf="@+id/btnClearFilters" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear Filters"
+        android:id="@+id/btnClearFilters"
+        android:layout_below="@+id/tvImageSite"
+        android:layout_toRightOf="@+id/tvImageColor" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spImageType"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/tvImageType"
+        android:layout_marginLeft="20dp"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Image Type"
+        android:id="@+id/tvImageType"
+        android:layout_alignBottom="@+id/spImageType"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Color"
+        android:id="@+id/tvImageColor"
+        android:layout_alignBottom="@+id/spImageColor"
+        android:layout_alignLeft="@+id/tvImageType"
+        android:layout_alignStart="@+id/tvImageType"
+        android:layout_marginBottom="5dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:id="@+id/spImageColor"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/spImageType"
+        android:layout_alignLeft="@+id/spImageType"
+        android:layout_alignStart="@+id/spImageType" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Size"
+        android:id="@+id/tvImageSize"
+        android:singleLine="false"
+        android:layout_alignBottom="@+id/spImageSize"
+        android:layout_alignLeft="@+id/tvImageColor"
+        android:layout_alignStart="@+id/tvImageColor" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spImageSize"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_below="@+id/spImageColor"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/spImageColor"
+        android:layout_alignStart="@+id/spImageColor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etImageSite"
+        android:layout_below="@+id/spImageSize"
+        android:layout_alignRight="@+id/spImageSize"
+        android:layout_alignEnd="@+id/spImageSize"
+        android:layout_alignLeft="@+id/spImageSize"
+        android:layout_alignStart="@+id/spImageSize"
+        android:hint="Enter URL"
+     />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Site"
+        android:id="@+id/tvImageSite"
+        android:singleLine="false"
+        android:layout_alignBottom="@+id/etImageSite"
+        android:layout_alignLeft="@+id/tvImageSize"
+        android:layout_alignStart="@+id/tvImageSize" />
+
+
+
+
+</RelativeLayout>
